@@ -1,10 +1,7 @@
-http://coursework.vschool.io/personal-portfolio/
-
-tag: portfolio, css, html, js
-goal: build a professional portfolio website.
-
-RESOURCES:
+title: Ben Turner's developer portfolio
 
 UPDATES:
 
 FUTURE IMPROVEMENTS:
+-add links to deployed sites
+-populate projects page
