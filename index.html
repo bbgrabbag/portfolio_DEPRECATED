@@ -13,8 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-5">
-                <div ng-hide="!onLoad"class="header-title" ng-controller="headerCtrl">
-                    <img id="profile-img" src="images/FTB.jpg" alt="">
+                <div ng-hide="!onLoad" class="header-title" ng-controller="headerCtrl">
                     <div class="titles">
 
                         <h1 id="title">Ben Turner</h1>
@@ -32,21 +31,19 @@
                         <a class="menu-links" href="#!/about-me">
                         About Me
                     </a>
-                       <p class="breaks">|</p>
-                        <a class="menu-links"href="#!/resume">Resume</a>
-<p class="breaks">|</p>
-                        <a class="menu-links"href="#!/projects">
+                        <p class="breaks">|</p>
+                        <a class="menu-links" href="#!/resume">Resume</a>
+                        <p class="breaks">|</p>
+                        <a class="menu-links" href="#!/projects">
                         Projects
                     </a>
                     </div>
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-7">
-
+            <div class="col-xs-12 col-sm-7 view-port">
                 <ng-view></ng-view>
             </div>
-
         </div>
     </div>
     <script src="https://use.fontawesome.com/7f58fa237b.js"></script>

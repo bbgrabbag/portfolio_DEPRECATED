@@ -11,8 +11,8 @@ angular.module("portfolioApp")
     .when("/projects", {
         templateUrl: "./templates/projects.html"
     })
-    .otherwise("/", {
-        redirectTo: "./templates.about-me.html"
+    .otherwise({
+        templateUrl: "./templates/about-me.html"
     });
 });
 
