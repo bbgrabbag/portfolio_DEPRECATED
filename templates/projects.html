@@ -1,0 +1,25 @@
+<div class="container">
+    <div ng-hide="!onLoad" id="projects-body">
+        <div ng-repeat="project in projects track by $index">
+            <div class="project-panel">
+                <div class="project-image-display">
+                    <div ng-repeat="screenshot in project.screenshotUrls track by $index">
+                        <img ng-src="{{screenshot}}" ng-click="openModal(screenshot)">
+                        
+                        <script type="text/ng-template" id="modalContent.html">
+                            <img class ="project-image-screenshot"ng-src="{{screenshot}}">
+                        </script>
+                    </div>
+                </div>
+                <div class="project-header">
+                    <h3>{{project.name}}</h3>
+                </div>
+                <div class="project-panel-body">
+                    <p>{{project.description}}</p>
+                    <a href="{{project.link}}">{{project.link}}</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
