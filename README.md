@@ -1,7 +1,10 @@
-title: Ben Turner's developer portfolio
+DESCRIPTION:
+
+Professional portfolio website for Ben Turner
 
 UPDATES:
 
-FUTURE IMPROVEMENTS:
--add links to deployed sites
--populate projects page
+Projects page is now live.
+
+
+
