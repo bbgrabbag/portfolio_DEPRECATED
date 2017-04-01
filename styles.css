@@ -230,7 +230,7 @@ fa,
     transition: all ease .5s;
     opacity: 1;
     color: skyblue;
-    background-color: white;
+    background:none;
 }
 
 fa,
@@ -244,6 +244,7 @@ fa,
 #projects-body {
     animation: .75s fadeInLeft ease;
     height: 650px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -283,7 +284,7 @@ fa,
     width: 100%;
 }
 
-@media (min-width: 400px) and (max-width: 770px) {
+@media (min-width: 400px) and (max-width: 767px) {
     .header-title {
         animation: .75s fadeInUp ease;
         display: flex;
