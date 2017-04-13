@@ -13,6 +13,12 @@ angular.module("portfolioApp")
             screenshotUrls: ["../images/bs-intro.png", "../images/bs-gameplay.png", "../images/bs-ending.png"],
             description: "Play a game of Battleship against the computer within Terminal!",
             link: "https://github.com/bbgrabbag/battleship"
+        },
+        {
+            name: "MechDigital Clock",
+            screenshotUrls: ["../images/clock-ext.jpg", "../images/clock-full.png","../images/clock.png"],
+            description: "Retro meets digital: A mechanical clock simulator Chrome Extension.",
+            link: "https://github.com/bbgrabbag/clock"
         }
         ];
         $scope.openModal = function (_screenshot) {
