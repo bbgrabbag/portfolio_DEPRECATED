@@ -16,7 +16,7 @@ angular.module("portfolioApp")
         },
         {
             name: "MechDigital Clock",
-            screenshotUrls: ["../images/clock-ext.jpg", "../images/clock-full.png","../images/clock.png"],
+            screenshotUrls: ["../images/clock-ext.jpg", "../images/clock-full.png", "../images/clock.png"],
             description: "Retro meets digital: A mechanical clock simulator Chrome Extension.",
             link: "https://github.com/bbgrabbag/clock"
         }
