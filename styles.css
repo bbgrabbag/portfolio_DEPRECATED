@@ -1,3 +1,6 @@
+@-ms-viewport{
+  width: device-width;
+}
 a:hover,
 a:active,
 a:focus {
