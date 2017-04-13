@@ -20,9 +20,10 @@ a:focus {
 }
 
 #profile-img {
+    float: left;
     animation: .75s fadeInRight ease;
-    width: 115px;
-    height: auto;
+    width: auto;
+    height: 250px;
     box-shadow: 2px 2px 8px #003355;
     margin-right: 20px;
 }
@@ -123,12 +124,8 @@ button {
 }
 
 #about-me-panel {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color:beige;
-    opacity: .8;
-    border: 1px solid grey;
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
     padding: 10px;
 }
 
@@ -157,6 +154,7 @@ font-style: italic;
 #resume-btn:hover {
     box-shadow: 2px 2px 8px #003355;
     opacity: .4;
+    transform: scale(1.1);
 }
 
 #enlarge {
