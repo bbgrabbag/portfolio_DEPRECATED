@@ -273,12 +273,8 @@ fa,
     box-shadow: 2px 2px 8px #003355;    
 }
 .project-image-display img:hover{
-    width: auto;
-    height: 69px;
-    padding: 1px;
-    margin:0px;
-    opacity: .75;
-    
+    transform: scale(1.1);
+    opacity: .75; 
 }
 .project-image-screenshot{
     width: 100%;
