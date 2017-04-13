@@ -12,9 +12,6 @@ angular.module("portfolioApp")
         templateUrl: "./templates/projects.html",
         controller: "projectsCtrl"
     })
-    .when("/blog", {
-        templateUrl: "./templates/blog.html"
-    })
     .otherwise({
         templateUrl: "./templates/about-me.html"
     });
