@@ -5,6 +5,10 @@
     font-family: "Didot", Georgia, Times, 'Times New Roman', serif
 }
 
+p {
+    font-size: .8em;
+}
+
 a:active,
 a:visited {
     color: white;
@@ -20,37 +24,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
 }
 
 .clickable {
     border: 3px solid white;
+    border-radius: 10%;
 }
 
 .clickable:hover {
     cursor: pointer;
-    border: 3px solid lightgreen;
+    border: 3px solid rgb(0, 138, 178);
 }
 
 .clickable:active {
-    border: 3px solid yellow;
+    border: 3px solid rgb(207, 189, 169);
 }
 
 /* CUBE */
 
 @keyframes onload {
     from {
-        transform: translate3d(0, 0, -125px)rotate3d(1, 5, 0, 420deg);
+        transform: translate3d(0, 0, -155px)rotate3d(1, 5, 0, 420deg);
     }
     to {
-        transform: translate3d(0, 0, -125px)rotate3d(1, 5, 0, 15deg);
+        transform: translate3d(0, 0, -155px)rotate3d(1, 5, 0, 15deg);
     }
 }
 
 .cube-wrapper {
     perspective: 1000px;
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 310px;
+    width: 310px;
 }
 
 .cube {
@@ -59,7 +65,7 @@ body {
     width: 100%;
     height: 100%;
     transition: transform .3s ease-in-out;
-    transform: translate3d(0, 0, -125px)rotate3d(1, 5, 0, 15deg);
+    transform: translate3d(0, 0, -155px)rotate3d(1, 5, 0, 15deg);
     animation: onload;
     animation-timing-function: ease-out;
     animation-duration: 1500ms;
@@ -72,31 +78,32 @@ body {
     top: 50%;
     left: 50%;
     text-align: center;
-    background: rgba(100, 200, 300, .8);
+    background: rgba(15, 150, 178, .8);
+    transition: transform .3s ease-in-out, height .3s .3s ease-in-out, width .3s .3s ease-in-out;
 }
 
 .front {
-    transform: rotate3d(0, 0, 0, 0deg) translate3d(-50%, -50%, 150px);
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(-50%, -50%, 155px);
 }
 
 .back {
-    transform: rotate3d(1, 0, 0, 180deg)translate3d(-50%, 50%, 150px);
+    transform: rotate3d(1, 0, 0, 180deg)translate3d(-50%, 50%, 155px);
 }
 
 .top {
-    transform: translate3d(-50%, -50%, 0)rotate3d(1, 0, 0, 90deg)translate3d(0, 0, 150px);
+    transform: translate3d(-50%, -50%, 0)rotate3d(1, 0, 0, 90deg)translate3d(0, 0, 155px);
 }
 
 .bottom {
-    transform: translate3d(-50%, -50%, 0)rotate3d(1, 0, 0, -90deg)translate3d(0, 0, 150px);
+    transform: translate3d(-50%, -50%, 0)rotate3d(1, 0, 0, -90deg)translate3d(0, 0, 155px);
 }
 
 .left {
-    transform: translate3d(-50%, -50%, 0)rotate3d(0, 1, 0, -90deg)translate3d(0, 0, 150px);
+    transform: translate3d(-50%, -50%, 0)rotate3d(0, 1, 0, -90deg)translate3d(0, 0, 155px);
 }
 
 .right {
-    transform: translate3d(-50%, -50%, 0)rotate3d(0, 1, 0, 90deg)translate3d(0, 0, 150px);
+    transform: translate3d(-50%, -50%, 0)rotate3d(0, 1, 0, 90deg)translate3d(0, 0, 155px);
 }
 
 /* PANEL DATA */
@@ -108,6 +115,30 @@ body {
     align-items: center;
     height: 100%;
     color: white;
-    position: relative;
+    animation-duration: .3s;
 }
 
+.panel-content {
+    visibility: hidden;
+    height: 0;
+    transition: height .3s ease-in, opacity .3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.panel-content a {
+    text-decoration-line: underline;
+}
+
+.panel-content a:hover {
+    color: lightgreen;
+}
+
+.active {
+    visibility: initial;
+    height: 100%;
+    opacity: 1;
+}
