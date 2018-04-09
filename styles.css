@@ -2,7 +2,10 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration-line: none;
-    font-family: "Didot", Georgia, Times, 'Times New Roman', serif
+    font-family: 'MyriadArabic-Light', Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5em;
+    word-spacing: .1em;
+    font-weight: 100;
 }
 
 p {
@@ -29,16 +32,16 @@ body {
 
 .clickable {
     border: 3px solid white;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .clickable:hover {
     cursor: pointer;
-    border: 3px solid rgb(0, 138, 178);
+    border: 3px solid rgb(255, 120, 110);
 }
 
 .clickable:active {
-    border: 3px solid rgb(207, 189, 169);
+    border: 3px solid rgb(255, 194, 158);
 }
 
 /* CUBE */
@@ -131,14 +134,91 @@ body {
 
 .panel-content a {
     text-decoration-line: underline;
+    color: white;
 }
 
 .panel-content a:hover {
-    color: lightgreen;
+    color: rgb(255, 120, 110);
+}
+
+.panel-content a:active {
+    color: rgb(255, 194, 158);
 }
 
 .active {
     visibility: initial;
     height: 100%;
     opacity: 1;
+}
+
+.tech-stack {
+    padding: 5px 0 ;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, .5);
+}
+
+.logo {
+    height: 50px;
+    width: 33%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.node {
+    background-image: url('./images/node.png');
+}
+
+.js {
+    background-image: url('./images/js.png');
+}
+.css{
+    background-image: url("./images/css.png");
+}
+.react{
+    background-image: url("./images/react.png");
+}
+.mongo{
+    background-image: url("./images/mongo.png");
+}
+.html{
+    background-image: url("./images/html.png");
+}
+
+.panel-gallery {
+    display: grid;
+    grid-row-gap: 1em;
+    height: 80%;
+    width: 150px;
+    overflow-y: scroll;
+}
+
+.panel-gallery a {
+    text-decoration-line: none;
+}
+
+.thumbnail {
+    background: url('./images/demo.png');
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.thumbnail:hover .caption {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: initial;
+    color: white
+}
+
+.caption {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+    font-size: 0;
 }
