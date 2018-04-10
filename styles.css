@@ -18,6 +18,8 @@ a:visited {
 }
 
 .disabled {
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
     pointer-events: none;
     cursor: default;
 }
@@ -62,8 +64,8 @@ body {
 .cube-wrapper {
     perspective: 1000px;
     position: relative;
-    height: 310px;
-    width: 310px;
+    height: 0px;
+    width: 0px;
 }
 
 .cube {
@@ -144,6 +146,14 @@ body {
     align-items: center;
     height: 100%;
     color: white;
+}
+
+.moz-panel-body {
+    justify-content: flex-start;
+}
+
+.panel-header h1 {
+    padding-top: 5px;
 }
 
 .panel-content {
@@ -231,13 +241,14 @@ body {
 }
 
 .thumbnail {
-    background-size: contain;
-    background-position: center;
+    background-size: 93% auto;
+    background-position: 50% 70%;
     background-repeat: no-repeat;
     width: 150px;
     height: 150px;
     border: 1px solid transparent;
     transition: border .1s linear;
+    border-radius: 10px;
 }
 
 .thumbnail::before {
@@ -266,6 +277,7 @@ body {
 
 .vschool {
     background-image: url("./images/vschool.png");
+    background-position: center;
 }
 
 .vschool::before {
@@ -275,6 +287,20 @@ body {
 @media (min-width: 700px) {
     .panel-content {
         width: 350px;
+    }
+    .panel-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+    }
+}
+
+@media (max-height: 400px) {
+    .wide-panel-content{
+        width: 100%;
+    }
+    .tech-stack {
+        flex-wrap: nowrap;
+        width: 100%;
     }
     .panel-gallery {
         grid-template-columns: 1fr 1fr;
