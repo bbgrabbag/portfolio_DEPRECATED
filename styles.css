@@ -140,16 +140,18 @@ body {
 /* PANEL DATA */
 
 .panel-body {
+    -webkit-display: flex;
+    -moz-display: flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center;
     align-items: center;
     height: 100%;
     color: white;
-}
-
-.moz-panel-body {
-    justify-content: flex-start;
 }
 
 .panel-header h1 {
@@ -160,9 +162,17 @@ body {
     visibility: hidden;
     height: 0;
     transition: height .3s ease-in, opacity .3s ease-in;
+    -webkit-display: flex;
+    -moz-display: flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center;
     opacity: 0;
 }
@@ -191,6 +201,8 @@ body {
     padding: 5px;
     display: flex;
     width: 100%;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
     flex-wrap: wrap;
     background: rgba(255, 255, 255, .5);
 }
@@ -229,7 +241,11 @@ body {
 }
 
 .panel-gallery {
+    -webkit-display: grid;
+    -moz-display: grid;
     display: grid;
+    -webkit-grid-row-gap: 1em;
+    -moz-grid-row-gap: 1em;
     grid-row-gap: 1em;
     height: 90%;
     width: 100%;
@@ -248,6 +264,8 @@ body {
     height: 150px;
     border: 1px solid transparent;
     transition: border .1s linear;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
@@ -285,25 +303,35 @@ body {
 }
 
 @media (min-width: 700px) {
-    .panel-content {
+    .panel-content-mid {
         width: 350px;
     }
     .panel-gallery {
+        -webkit-grid-template-columns: 1fr 1fr;
+        -moz-grid-template-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        -webkit-grid-column-gap: 1em;
+        -moz-grid-column-gap: 1em;
         grid-column-gap: 1em;
     }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
     .wide-panel-content{
         width: 100%;
     }
     .tech-stack {
+        -webkit-flex-wrap: nowrap;
+        -moz-flex-wrap: nowrap;
         flex-wrap: nowrap;
         width: 100%;
     }
     .panel-gallery {
+        -moz-grid-template-columns: 1fr 1fr;
+        -webkit-grid-template-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        -moz-grid-column-gap: 1em;
+        -webkit-grid-column-gap: 1em;
         grid-column-gap: 1em;
     }
 }
