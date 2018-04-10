@@ -152,7 +152,8 @@ body {
 }
 
 .tech-stack {
-    padding: 5px 0 ;
+    margin-top: 3px;
+    padding: 5px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -160,7 +161,8 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 60px;
+    margin-bottom: 3px;
     width: 33%;
     background-size: contain;
     background-position: center;
@@ -174,16 +176,20 @@ body {
 .js {
     background-image: url('./images/js.png');
 }
-.css{
+
+.css {
     background-image: url("./images/css.png");
 }
-.react{
+
+.react {
     background-image: url("./images/react.png");
 }
-.mongo{
+
+.mongo {
     background-image: url("./images/mongo.png");
 }
-.html{
+
+.html {
     background-image: url("./images/html.png");
 }
 
@@ -191,7 +197,7 @@ body {
     display: grid;
     grid-row-gap: 1em;
     height: 80%;
-    width: 150px;
+    width: 100%;
     overflow-y: scroll;
 }
 
@@ -200,25 +206,53 @@ body {
 }
 
 .thumbnail {
-    background: url('./images/demo.png');
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 150px;
     height: 150px;
+    border: 1px solid transparent;
+    transition: border .1s  linear;
 }
 
-.thumbnail:hover .caption {
-    background-color: rgba(0, 0, 0, .8);
-    font-size: initial;
-    color: white
+.thumbnail::before {
+    color: white;
 }
 
-.caption {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .3s linear;
-    font-size: 0;
+.thumbnail:hover{  
+    border: 1px solid white;
+}
+
+.jerb {
+    background-image: url('./images/jerb.png');
+}
+
+.jerb::before {
+    content: 'Jerb';
+}
+
+.pulser {
+    background-image: url("./images/pulser.png")
+}
+
+.pulser::before {
+    content: 'React Pulser';
+}
+
+.vschool {
+    background-image: url("./images/vschool.png");
+}
+
+.vschool::before {
+    content: 'VSchool Blog';
+}
+
+@media (min-width: 700px) {
+    .panel-content {
+        width: 350px;
+    }
+    .panel-gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+    }
 }
