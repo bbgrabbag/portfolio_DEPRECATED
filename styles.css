@@ -12,9 +12,18 @@ p {
     font-size: .8em;
 }
 
+a {
+    text-decoration: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
 a:active,
 a:visited {
     color: white;
+    text-decoration: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .disabled {
@@ -45,7 +54,10 @@ body {
 .clickable:active {
     border: 3px solid rgb(255, 194, 158);
 }
-
+.underline{
+    text-decoration-line: underline !important;
+    -moz-text-decoration-line: underline !important;
+}
 /* CUBE */
 
 @keyframes onload {
@@ -302,6 +314,16 @@ body {
 
 .vschool::before {
     content: 'VSchool Blog';
+}
+
+.conway {
+    background-image: url("./images/conway.png");
+    background-position: center;
+    background-size: 75%;
+}
+
+.conway::before {
+    content: 'Game Of Life';
 }
 
 @media (min-width: 700px) {
