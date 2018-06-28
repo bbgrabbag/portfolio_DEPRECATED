@@ -5,11 +5,15 @@
     font-family: 'MyriadArabic-Light', Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
     word-spacing: .1em;
-    font-weight: 100;
+    letter-spacing: .05em;
+    font-weight: 200;
 }
-
+h1{
+    font-size: 2em;
+    font-weight: 600;
+}
 p {
-    font-size: .8em;
+    font-size: 1.2em;
 }
 
 a {
@@ -327,6 +331,9 @@ body {
 }
 
 @media (min-width: 700px) {
+    p{
+        font-size: 2em;
+    }
     .panel-content-mid {
         width: 350px;
     }
@@ -341,6 +348,9 @@ body {
 }
 
 @media (max-height: 450px) {
+    p{
+        font-size: 1em;
+    }
     .wide-panel-content {
         width: 100%;
     }
