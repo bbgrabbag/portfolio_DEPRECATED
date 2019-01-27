@@ -235,27 +235,27 @@ body {
 }
 
 .node {
-    background-image: url('./images/node.png');
+    background-image: url('images/node.png');
 }
 
 .js {
-    background-image: url('./images/js.png');
+    background-image: url('images/js.png');
 }
 
 .css {
-    background-image: url("./images/css.png");
+    background-image: url("images/css.png");
 }
 
 .react {
-    background-image: url("./images/react.png");
+    background-image: url("images/react.png");
 }
 
 .mongo {
-    background-image: url("./images/mongo.png");
+    background-image: url("images/mongo.png");
 }
 
 .html {
-    background-image: url("./images/html.png");
+    background-image: url("images/html.png");
 }
 
 .panel-gallery {
