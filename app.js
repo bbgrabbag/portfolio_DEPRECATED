@@ -3,13 +3,13 @@ const cube = document.getElementById("cube");
 const panels = document.querySelectorAll(".clickable");
 
 // metrics
-const centerDist = 155;
+const centerDist = 175;
 const centerOffset = centerDist * -1;
 const defaultCube = `translate3d(0, 0, ${centerOffset}px)rotate3d(1, 5, 0, 15deg)`;
 const defaultCubeActive = `translate3d(0, 0, ${centerOffset}px)`;
 
 const panelScale = `scale3d(1.35,1.35,1)`;
-const panelDefaultSize = "190"
+const panelDefaultSize = "230"
 const panelActiveHeight = `65vh`;
 const panelActiveWidth = `65vw`;
 
