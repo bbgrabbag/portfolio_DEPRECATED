@@ -180,6 +180,8 @@ body {
 .panel-content {
     visibility: hidden;
     height: 0;
+    width: 100%;
+    max-width: 25rem;
     transition: height .3s ease-in, opacity .3s ease-in;
     -webkit-display: flex;
     -moz-display: flex;
