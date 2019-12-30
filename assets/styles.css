@@ -2,20 +2,20 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration-line: none;
-    font-family: 'Slabo 27px', serif;
-    line-height: 1.5em;
-    word-spacing: .1em;
-    letter-spacing: .05em;
+    font-family: 'Calibri', sans-serif;
+    line-height: 1.5rem;
+    word-spacing: .1rem;
+    letter-spacing: .05rem;
     font-weight: 100;
 }
 
 h1 {
-    font-size: .8rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 p, a {
-    font-size: .6em;
+    font-size: 1.1rem;
 }
 
 a {
@@ -29,10 +29,6 @@ a:active, a:visited {
     text-decoration: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-}
-
-embed {
-    border-radius: 10px;
 }
 
 .disabled {
@@ -51,17 +47,17 @@ body {
 }
 
 .clickable {
-    border: 3px solid white;
-    border-radius: 10px;
+    border: .3rem solid white;
+    border-radius: 1rem;
 }
 
 .clickable:hover {
     cursor: pointer;
-    border: 3px solid rgb(255, 120, 110);
+    border: .3rem solid rgb(255, 120, 110);
 }
 
 .clickable:active {
-    border: 3px solid rgb(255, 194, 158);
+    border: .3rem solid rgb(255, 194, 158);
 }
 
 .underline {
@@ -85,10 +81,10 @@ body {
 }
 
 .cube-wrapper {
-    perspective: 1000px;
+    perspective: 100rem;
     position: relative;
-    height: 0px;
-    width: 0px;
+    height: 0;
+    width: 0;
 }
 
 .cube {
