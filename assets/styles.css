@@ -37,6 +37,9 @@ a:active, a:visited {
 .top-border{
     border-top: 1px solid white;
 }
+.fill{
+    flex: 1;
+}
 .link-text{
     text-decoration: underline !important;
 }
@@ -44,6 +47,11 @@ a:active, a:visited {
     color: rgb(255, 120, 110);
 }
 
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .disabled {
     -webkit-pointer-events: none;
     -moz-pointer-events: none;
