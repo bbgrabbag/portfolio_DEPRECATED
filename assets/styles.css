@@ -2,20 +2,23 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration-line: none;
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.5rem;
     word-spacing: .1rem;
     letter-spacing: .05rem;
-    font-weight: 100;
+    font-weight: 650;
 }
 
 h1 {
     font-size: 1.3rem;
-    font-weight: 600;
+}
+h3{
+    font-size: 1rem;
 }
 
 p, a {
-    font-size: 1.1rem;
+    font-size: .75rem;
+    line-height: 1rem;
 }
 
 a {
@@ -29,6 +32,16 @@ a:active, a:visited {
     text-decoration: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+}
+
+.top-border{
+    border-top: 1px solid white;
+}
+.link-text{
+    text-decoration: underline !important;
+}
+.link-text:hover{
+    color: rgb(255, 120, 110);
 }
 
 .disabled {
@@ -178,6 +191,7 @@ body {
 }
 
 .panel-content {
+    padding: 5px;
     visibility: hidden;
     height: 0;
     width: 100%;
